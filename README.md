@@ -1,2 +1,2 @@
 # Practicing
-Practicing HTML and CSS by committing from VSCode
+Practicing HTML and CSS by committing from VSCode :D
