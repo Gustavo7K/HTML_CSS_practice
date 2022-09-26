@@ -1,0 +1,127 @@
+html, body {
+	width: 100%;
+	height: 100%;
+  max-width: 100%;
+	margin: 0;	
+}
+/*For the Background animation*/
+.background {
+    background-color: rgb(255, 255, 255);
+    animation-name: colors;
+    animation-duration: 11s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+@keyframes colors{
+    0%{background-color: #8cfcda;}
+    10%{background-color: #60bbf4;}
+    20%{background-color: #00ffff;}
+    30%{background-color: #7d42dd;}
+    40%{background-color: #3a4ee5;}
+    50%{background-color: #8454a6;}
+    60%{background-color: #dd3bdd;}
+    70%{background-color: #9123ff;}
+    80%{background-color: #e237a1;}
+    90%{background-color: #96285b;}
+    100%{background-color: #fd7474;}
+}
+/* end */
+
+.container{
+    width: 50%;
+    height: 50%;
+    overflow: visible;
+    margin: auto;
+    position: fixed;
+    top: 10%; left: 10%; bottom: 10%; right: 10%;
+}
+
+/* 2° Animation (words)*/
+.message {
+  color: #333;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 10%; left: 10%; bottom: 0%; right: 10%;
+  animation: openclose 8s ease-in-out infinite;
+}
+/* end */
+
+h1 {
+  color: #333;
+  font-family: tahoma;
+  font-size:3.5vw;
+  line-height: 1.5;
+  text-transform: uppercase;
+  overflow: hidden;
+  position: absolute;
+  width: 80%;
+  height: 22%;
+}
+h1 span {
+  margin-left: 5%;
+}
+
+/* 2° Animation (words)*/
+@keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    top: 0.2rem;
+    width: 0;
+  }
+  15% {
+    width: 40%;
+  }
+  30% {
+    top: 0.2rem;
+    width: 40%;
+  }
+  35% {
+    top: 0.3rem;
+    width: 0;
+  }
+  40% {
+    top: 0.5rem;
+    width: 0;
+  }
+
+  50% {
+    top: -4.0rem;
+    width: 40%;
+  }
+  55% {
+    top: -4.5rem;
+    width: 40%;
+  }
+  60% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  70% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  80% {
+    top: -9rem;
+    width: 48%;
+  }
+  90% {
+    top: -9rem;
+    width: 48%;
+  }
+  95% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
